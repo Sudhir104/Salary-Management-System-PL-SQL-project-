@@ -1,14 +1,28 @@
-# SalaryManagementSystem
- 
-It's a PL/SQL project. I created this project with distributed database.
-Salary Management has 3 users
-1. Admin/HR
-2. Accountant
-3. Employee
+# Salary Management System
 
+## Description
+Salary Management System is a PL/SQL-based project built using a distributed database.  
+It simulates a real-world payroll system with **role-based access** and allows administrators, accountants, and employees to manage and view salary information effectively.
 
-Each has several functionality
+## Features
+- **Admin/HR:** Add/update employee records, assign salaries, manage departments.
+- **Accountant:** Process salary payments, maintain financial records, generate reports.
+- **Employee:** View salary slips, personal information, and payment history.
+- Role-based access control ensures proper segregation of duties.
+- Generate various reports for better payroll management.
 
-More details on: 
+## Technologies Used
+- PL/SQL
+- Distributed Database
 
-https://nowshad7.blogspot.com/p/salary-management-system.html
+## Database Schema
+- **Employees** (employee_id, name, department, position, salary)
+- **Departments** (department_id, name, head)
+- **Salaries** (salary_id, employee_id, amount, date_paid)
+- **Accounts** (account_id, employee_id, salary_id, transaction_date)
+- **Other supporting tables** for role management and reports
+
+## How to Use
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/SalaryManagementSystem.git
